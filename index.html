@@ -1,31 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My First Webpage</title>
-    <link rel="shortcut icon" href="/images/html_logo700x700.png" type="image/x-icon">
-</head>
-<body>
-    <h1>Hello World!</h1>
-    <p> &nbsp; <b>Lorem</b> ipsum dolor sit amet consectetur adipisicing elit. Ea, expedita?</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati totam odit eius expedita voluptas quis sunt eos non placeat quidem?</p>
-    <p>Quibusdam perspiciatis eos tenetur iste, ullam tempore eaque nesciunt reiciendis quia voluptates impedit, aliquam, amet obcaecati repellendus omnis consequatur dolorum!</p>
-    <ul>
+    <link
+      rel="shortcut icon"
+      href="/images/html_logo700x700.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Hello World!</h1>
+      <hr />
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#one">one</a>
+            </li>
+            <li>
+                <a href="#two">two</a>
+            </li>
+            <li>
+                <a href="#three">three</a>
+            </li>
+            <li>
+                <a href="#four">four</a>
+            </li>
+            <li>
+                <a href="/contact.html" target="_blank">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="one">
+      <h2>Section 1</h2>
+        <p>
+        <b>Lorem</b> ipsum dolor sit amet consectetur adipisicing elit. Ea,
+        expedita?
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
+        totam odit eius expedita voluptas quis sunt eos non placeat quidem?
+      </p>
+      <p>
+        Quibusdam perspiciatis eos tenetur iste, ullam tempore eaque nesciunt
+        reiciendis quia voluptates impedit, aliquam, amet obcaecati repellendus
+        omnis consequatur dolorum!
+      </p>
+    </section>
+    <section id="two">
+      <h2>section 2</h2>
+        <ul>
         <li>1</li>
         <li>2</li>
         <li>3</li>
         <li>4</li>
         <li>5</li>
         <li>6</li>
-    </ul>
-    <dl>
+      </ul>
+      <dl>
         <dt>Hello</dt>
-        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quos, id ipsum dolor, at harum reprehenderit cum recusandae aperiam, fugit ex earum quaerat quam voluptatum mollitia eos optio autem eum?</dd>
-    </dl>
-    <a href="https://gist.github.com/nopphawong/a64870dd13c17444e433da31a20c9b1a" target="_blank">github</a><br>
-    <a href="https://github.com/KanatipPuboonlap/html_course" target="_blank">my github</a><br>
-    <a href="/about.html">Go to About</a>
-</body>
+        <dd>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quos, id
+          ipsum dolor, at harum reprehenderit cum recusandae aperiam, fugit ex
+          earum quaerat quam voluptatum mollitia eos optio autem eum?
+        </dd>
+      </dl>
+    </section>
+    <section id="three">
+      <h2>section 3</h2>
+        <h3>2 picture</h3>
+      <ul>
+        <li>
+          <h4>white_temple</h4>
+          <address>เดินตรงไปเลี้ยวซ้าย</address>
+          <figure>
+            <img
+              src="images/white_temple.jpg"
+              alt="white_temple"
+              width="400"
+              height="225"
+              loading="lazy"
+            />
+            <figcaption>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              delectus voluptatibus debitis itaque magni magnam ut quidem
+              provident et, earum velit similique fugiat aperiam dolores beatae
+              excepturi vel obcaecati eligendi?
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <h4>black_house</h4>
+          <address>วิ่งตรงไปเลี้ยวซ้าย</address>
+          <figure>
+            <img
+              src="images/black_house.jpg"
+              alt="black_house"
+              width="400"
+              height="225"
+              loading="lazy"
+            />
+            <figcaption>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+              provident vel quis, sunt voluptatem laboriosam error non ut,
+              similique, itaque molestias? Hic laborum optio nobis nam soluta
+              veritatis inventore molestiae?
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+    <section id="four">
+      <h2>section 4</h2>
+        <table>
+        <caption>
+          Learning Course Schedule
+        </caption>
+        <thead>
+          <tr>
+            <th>Day/Topic</th>
+            <th>Content</th>
+            <th>Dificulty</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Tuesday</th>
+
+            <td>Html:5</td>
+            <td rowspan="2">Easy</td>
+          </tr>
+          <tr>
+            <th>Wednesday</th>
+
+            <td>Css3</td>
+          </tr>
+          <tr>
+            <th>Thursday</th>
+            <td>JavaScript</td>
+            <td rowspan="2">Normal</td>
+          </tr>
+          <tr>
+            <th>Friday</th>
+            <td>Booststrap</td>
+          </tr>
+          <tr>
+            <th>Saturday</th>
+            <td>Final project</td>
+            <td>Bullshit</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">
+              this learning content for HTML5 course schedule in 5 days
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <footer>
+      <a
+        href="https://gist.github.com/nopphawong/a64870dd13c17444e433da31a20c9b1a"
+        target="_blank"
+        >github</a
+      ><br />
+      <a href="https://github.com/KanatipPuboonlap/html_course" target="_blank"
+        >my github</a
+      ><br />
+      <a href="/about.html">Go to About</a>
+    </footer>
+  </body>
 </html>
